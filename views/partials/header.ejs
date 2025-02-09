@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link rel="stylesheet" href="/css/header.css">
+</head>
+<body>
+    <header>
+        <nav class="custom-nav">
+            <div class="nav-container">
+              <div class="brand">
+               <img class="logo" src="/logo.png" alt="logo">
+              </div>
+              <button class="toggle-btn togbtn" onclick="toggleNav()" aria-label="Toggle navigation">
+                &#9776;
+              </button>
+              <div id="nav-links" class="nav-links">
+                <a href="/" id="cap">Home</a>
+                <a href="/about" id="cap">About Me</a>
+                <a href="/project" id="cap">Project</a>
+                <a href="/skill" id="cap">Skills</a>
+                <a href="/contact" id="cap">Contact Me</a>
+              </div>
+            </div>
+          </nav>
+        
+          <script>
+            function toggleNav() {
+              const navLinks = document.getElementById("nav-links");
+              navLinks.classList.toggle("active");
+            }
+          </script>
+          
+    </header>
+    <footer>
+            <p>&copy; 2025 AKS_PORTFOLIO - All Rights Reserved</p>
+    </footer>
+</body>
+</html>

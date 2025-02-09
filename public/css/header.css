@@ -1,0 +1,106 @@
+*{
+    margin:0;
+    padding:0;
+}
+.custom-nav {
+    background-color:black;
+    border-bottom: 2.5px solid red;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed; 
+    width: 100%;
+    z-index: 2;
+  }
+
+  .nav-container {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+
+  .brand .logo {
+    height: 75px;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 30px;
+  }
+  
+  #cap {
+    font-weight: bold;
+    font-size: 18px;
+    color: red; 
+    text-decoration: none;
+&:hover {
+    color:white;
+ transform: scale(1.3);
+}
+}
+
+  .toggle-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+ 
+
+.homepage{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.togbtn{
+    color:red;
+    &:hover{
+        color:white;
+    }
+}
+footer {
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+    height: 10vh;
+    width: 100%;
+    border-top: 2.5px solid red;
+    background-color:black;
+     color:red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+@media (max-width: 768px) {
+    .custom-nav{
+        border-bottom:2.5px solid red;
+    }
+    .toggle-btn {
+      display: block;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: black;
+      position: absolute;
+      top: 12vh;
+      right: 0;
+      width: 100%;
+      text-align: center;
+   
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  }
+  

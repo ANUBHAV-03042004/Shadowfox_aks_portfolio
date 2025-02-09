@@ -1,0 +1,41 @@
+.skills
+{
+    height:95vh;
+    width:100vw;
+    display: flex;
+    align-items: center;
+}
+.skill_img{
+    display: block;
+    width:30vw;
+    margin-left:0.5vw;
+}
+.skills h1{
+    color:black;
+    background-color: red;
+    width:25vw;
+    text-align:center;
+}
+.skill_img img{width:75%; margin-left:5vh;}
+.skill_img h1{ margin-left:1.5vw;}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(2, auto); 
+    gap: 10px;
+   width:65vw;
+    margin: auto;
+    margin-top:15vh;
+}
+
+.image-grid img {
+    width: 50%; 
+    height: auto;
+    border-radius: 5px;
+}
+.image-grid a{
+    text-decoration: none;
+    color:black;
+    text-align:center;
+}

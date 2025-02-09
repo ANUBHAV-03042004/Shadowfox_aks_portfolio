@@ -1,0 +1,40 @@
+
+.container_project{
+display: flex;
+height:95vh;
+width:100vw;
+
+}
+.contain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:12vh;
+    width:100vw;
+ 
+}
+.img_container img{ margin-top:-3vh;}
+.img_container h1{
+    color:black;
+    background-color: red;
+    width:25vw;
+    text-align:center;
+    margin-left:10vw;
+}
+
+.project2, .project1{
+    height:34vh;
+    width:28vw;
+    color:white;
+    text-align:center;
+    transition: transform 0.5s ease;
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+.pr_img2, .pr_img1{
+
+margin-top:0.2vh;
+    width:27vw; 
+    height:30vh;  
+}
