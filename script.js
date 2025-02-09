@@ -22,6 +22,9 @@ app.get('/', (req, res) => {
                 app.get('/contact', (req, res) => {
                     res.render('contact');
                     });
+                    app.get('/*', (req, res) => {
+                        res.render('page_not_found');
+                        });
     app.listen(3000,()=>{
         console.log('server connected...')
     });
