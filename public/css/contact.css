@@ -169,3 +169,109 @@
         display: none;
     }
 }
+
+@media (min-width: 100px) and (max-width: 600px) {
+    .main_container {
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+        justify-content: center;
+        padding: 20px 0;
+        margin-bottom: 5vh;
+    }
+
+    .contact {
+        width: 90vw;
+        justify-content: center;
+    }
+
+    .contact_img {
+        width: 90vw;
+        margin-left: 0;
+        text-align: center;
+        margin-top: 10vh;
+    }
+
+    .contact_img h1 {
+        width: clamp(50vw, 120vw, 150vw);
+        margin-bottom:2vh;
+        font-size: clamp(1.2rem, 3vw, 1.8rem);
+        margin-left: -8vw;
+    }
+
+    .contact_img img {
+        width: clamp(40vw, 60vw, 80vw); /* Responsive width */
+        height: clamp(20vh, 30vh, 40vh); /* Responsive height */
+        margin-left: 0; /* Center the image */
+    }
+
+    .social-links {
+        width: 90vw;
+        height: auto;
+        margin-left: 0;
+        padding: 20px 0;
+        display: flex; /* Use flex to center content */
+        flex-direction: column;
+        align-items: center; /* Center horizontally */
+    }
+
+    .social-links h4 {
+        font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+    }
+
+    .box2_button {
+        margin: 15px 0;
+        display: flex; /* Ensure buttons are centered */
+        justify-content: center;
+        flex-wrap: wrap; /* Allow buttons to wrap if needed */
+    }
+
+    .button-icon {
+        margin: 5px; /* Add spacing between buttons */
+    }
+
+    .cube {
+        width: clamp(120px, 25vw, 150px);
+        height: 18px;
+    }
+
+    .side {
+        width: clamp(120px, 25vw, 150px);
+        height: 40px;
+        font-size: clamp(0.6em, 1.5vw, 0.8em);
+    }
+
+    .icon img,
+    .icon svg {
+        height: clamp(15px, 2.5vw, 20px);
+        width: clamp(15px, 2.5vw, 20px);
+    }
+
+    .query-form {
+        width: 90%;
+        max-width: 100%; /* Ensure it doesn't exceed the container */
+    }
+
+    .query-form input,
+    .query-form textarea {
+        width: 100%;
+        max-width: clamp(200px, 80vw, 300px); /* Responsive max-width */
+        font-size: clamp(0.7rem, 1.8vw, 0.9rem);
+        padding: clamp(6px, 1.5vw, 8px); /* Responsive padding */
+    }
+
+    .query-form textarea {
+        height: clamp(60px, 15vw, 80px); /* Responsive height */
+    }
+
+    .query-form .submit-btn {
+        font-size: clamp(0.7rem, 1.8vw, 0.9rem);
+        padding: clamp(6px, 1.5vw, 8px) clamp(10px, 2.5vw, 16px); /* Responsive padding */
+    }
+}
+@media (min-width: 600px) and (max-width: 1300px){
+    .social-links {
+        margin-top:0vh;
+        margin-bottom:25vh;
+    }
+}
