@@ -3,22 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png"  href="/favicon.png">
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="icon" type="image/png" href="/favicon.png">
     <title>Home</title>
+  <link rel="stylesheet" href="/css/home.css">
+  <link rel="stylesheet" href="/css/link.css">
 </head>
 <body>
     <%- include('partials/header') %>
+ 
     <div class="home">
-    <img class="home_img" src="/converted_aks.png" alt="img_home">
-    <h1>HOME</h1>
-</div>
-<div class="content">
-    <h1>Hi, I'm Anubhav Kumar Srivastava</h1>
-    <br>
-    <h2>A Computer Science Student Specializing in Web Development</h2>
-    <br>
-    <%- include('partials/links') %>
-</div>
+        <img class="home_img" src="/converted_aks.png" alt="img_home">
+        <h1>HOME</h1>
+    </div>
+    <div class="content">
+        <h1>Hi, I'm Anubhav Kumar Srivastava</h1>
+        <br>
+        <h2>A Computer Science Student Specializing in Web Development</h2>
+        <br>
+        <%- include('partials/links') %>  
+    </div>
+    <%- include('partials/hide-show') %>   
 </body>
 </html>

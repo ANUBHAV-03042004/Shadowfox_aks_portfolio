@@ -1,33 +1,257 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
 }
-
-.home{
-    min-height:94vh;
-    min-width:98vw;
-     display: grid;
-     place-items: start end;
+.home {
+    min-height: 94vh;
+    min-width: 98vw;
+    display: grid;
+    place-items: start end;
 }
-.home h1{
-    color:black;
+.home h1 {
+    color: black;
     background-color: red;
-    width:28vw;
-    text-align:center;
+    width: clamp(20vw, 25vw, 30vw);
+    text-align: center;
     margin-right: 14vw;
-    margin-bottom:7.5vh;
+    margin-bottom: 7.5vh;
+    font-size: clamp(1.5rem, 5vw, 3rem);
 }
-.home_img{
-    height:65vh;
-    width:55vw;
-    margin-top:15vh;
+.home_img {
+    height: clamp(50vh, 65vh, 70vh);
+    width: clamp(40vw, 55vw, 60vw);
+    margin-top: 15vh;
     object-fit: contain;
 }
-.content{
-    height:50vh;
-    width:50vw;
+.content {
+    height: 50vh;
+    width: clamp(40vw, 50vw, 60vw);
     position: absolute;
-    top:25vh;
+    top: 25vh;
 }
-.content h1{  text-align:center;}
-.content h2{ text-align:center}
+.content h1 {
+    text-align: center;
+    font-size: clamp(1.2rem, 2vw, 2.5rem);
+}
+.content h2 {
+    text-align: center;
+    font-size: clamp(1rem, 2vw, 2rem);
+}
+.box1_button h3, .box2_button h3 {
+    font-size: clamp(0.9rem, 2.5vw, 1.5rem);
+}
+.hide-show {
+    display: none;
+}
+@media (max-width: 100px) {
+    .home {
+        display: none;
+    }
+    .content {
+        display: none;
+    }
+    .hide-show {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        min-height: 100vh;
+        justify-content: center;
+    }
+    .hide-show img {
+        width: clamp(40px, 10vw, 50px);
+        height: auto;
+        max-width: 100%;
+    }
+    .hide-show h6 {
+        margin: 15px 0;
+        line-height: 1;
+        font-size: clamp(0.5rem, 2vw, 1rem);
+    }
+    .hide-show h5 {
+        display: none;
+    }
+    header {
+        display: none !important;
+    }
+    footer {
+        display: none !important;
+    }
+    .box1_button, .box2_button {
+        display: block;
+    }
+}
+
+@media (min-width: 101px) and (max-width: 200px) {
+    .home h1 {
+            width: clamp(50%, 70%, 80%);
+            margin-top: -52vh;
+            font-size: clamp(1rem, 3vw, 2rem);
+        }
+        .home_img {
+            height: clamp(30vh, 120vh, 130vh);
+            width: clamp(60vw, 90vw, 100vw);
+        }
+        .content {
+            width: clamp(70vw, 85vw, 90vw);
+            height: auto;
+            top: 20vh;
+        }
+        .content h1 {
+            font-size: clamp(0.9rem, 3vw, 1.8rem);
+        }
+        .content h2 {
+            font-size: clamp(0.7rem, 2vw, 1.3rem);
+        }
+        .cube {
+            width: clamp(100px, 15vw, 150px);
+        }
+        .side {
+            width: clamp(100px, 15vw, 150px);
+            font-size: clamp(0.5em, 1vw, 0.6em);
+        }
+        .icon svg, .icon img {
+            width: clamp(12px, 2vw, 18px);
+            height: clamp(12px, 2vw, 18px);
+        }
+
+ .box1_button, .box2_button {
+            flex-direction: column;
+            gap: 5px;
+        }
+        .box1_button h3, .box2_button h3 {
+            font-size: clamp(0.6rem, 1.8vw, 1rem);
+        }
+}
+@media (min-width: 201px) and (max-width: 400px) {
+    .home h1 {
+            width: clamp(50%, 70%, 80%);
+            margin-top: -48vh;
+            font-size: clamp(1rem, 3vw, 2rem);
+        }
+        .home_img {
+            height: clamp(30vh, 120vh, 130vh);
+            width: clamp(60vw, 90vw, 100vw);
+        }
+        .content {
+            width: clamp(70vw, 85vw, 90vw);
+            height: auto;
+            top: 20vh;
+        }
+        .content h1 {
+            font-size: clamp(0.9rem, 3vw, 1.8rem);
+        }
+        .content h2 {
+            font-size: clamp(0.7rem, 2vw, 1.3rem);
+        }
+        .cube {
+            width: clamp(200px, 15vw, 250px);
+        }
+        .side {
+            width: clamp(200px, 15vw, 250px);
+            font-size: clamp(0.5em, 1vw, 0.6em);
+        }
+        .icon svg, .icon img {
+            width: clamp(12px, 2vw, 18px);
+            height: clamp(12px, 2vw, 18px);
+        }
+
+ .box1_button, .box2_button {
+            flex-direction: column;
+            gap: 5px;
+        }
+        .box1_button h3, .box2_button h3 {
+            font-size: clamp(0.6rem, 1.8vw, 1rem);
+        }
+}
+@media (min-width: 401px) and (max-width: 530px) {
+    .home h1 {
+            width: clamp(30%, 40%, 50%);
+            margin-top: -26vh;
+            margin-right: 5vw;
+            font-size: clamp(1rem, 3vw, 2rem);
+        }
+        
+ .box1_button, .box2_button {
+            flex-direction: column;
+            gap: 5px;
+        }
+}
+@media (min-width: 530px) and (max-width: 770px) {
+    .home h1 {
+            width: clamp(30%, 40%, 50%);
+            margin-top: -20vh;
+            margin-right: 5vw;
+            font-size: clamp(1rem, 3vw, 2rem);
+        }
+        .cube {
+            width: clamp(200px, 15vw, 250px);
+        }
+        .side {
+            width: clamp(200px, 15vw, 250px);
+        }
+ .box1_button, .box2_button {
+            flex-direction: column;
+            gap: 5px;
+        }
+        .icon svg, .icon img {
+            width: clamp(12px, 4vw, 24px);
+            height: clamp(12px, 4vw, 24px);
+        }
+}
+@media (min-width: 770px) and (max-width: 1000px) {
+    .home h1 {
+            width: clamp(30%, 40%, 50%);
+            margin-top: -15vh;
+            margin-right: 5vw;
+            font-size: clamp(1rem, 3vw, 2rem);
+        }
+        .cube {
+            width: clamp(200px, 15vw, 250px);
+        }
+        .side {
+            width: clamp(200px, 15vw, 250px);
+        }
+ .box1_button, .box2_button {
+            flex-direction: column;
+            gap: 5px;
+        }
+        .icon svg, .icon img {
+            width: clamp(12px, 4vw, 24px);
+            height: clamp(12px, 4vw, 24px);
+        }
+}
+@media (min-width: 1000px) {
+    .home h1 {
+            width: clamp(20%, 35%, 50%);
+            margin-top: -10vh;
+            margin-right: 8vw;
+            font-size: clamp(1rem, 3vw, 2rem);
+        }
+}
+
+
+
+
+@media (max-height: 100px) {
+   .home{display: none;}
+   .content{display: none;}
+   header{display: none;}
+   footer{display: none !important;}
+
+    .hide-show {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .hide-show img {
+        width: 50px;
+        height: auto;
+        max-width: 100%;
+    }
+    .hide-show h5 {
+        margin: 15px 0;
+        font-size: clamp(0.5rem, 2vw, 1rem);
+    }
+    .hide-show h6 {display: none;}
+}

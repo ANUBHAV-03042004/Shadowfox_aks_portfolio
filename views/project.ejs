@@ -12,49 +12,91 @@
     <%- include('partials/header') %>
 
     <div class="container_project">
-        <div class="contain">
+        <!-- First Row: project1 and project2 -->
+        <div class="projects-row-1">
             <div class="project1_container">
-        <div class="project1">
-            <img class="pr_img1" src="/project_img1.png" alt="mitram_img">
-            <h5>MITRAM USING LARAVEL , PHP , PUSHER </h5>
-        </div>
-        <br>
-        <div class="box2_button"> 
-            <div class="button-icon">
-              <div class="icon">
-               <img src="/project1_logo.png" alt="icon_image">
-              </div>
-              <div class="cube">
-                <span class="side front">View Project</span>
-                <span class="side top"><a href="https://github.com/ANUBHAV-03042004/mitram">Check It On Github</a></span>
-              </div>
+                <div class="project1">
+                    <img class="pr_img1" src="/project_img1.png" alt="mitram_img">
+                    <h5>MITRAM USING LARAVEL, PHP, PUSHER</h5>
+                </div>
+                <div class="box2_button">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <img src="/project1_logo.png" alt="icon_image">
+                        </div>
+                        <div class="cube">
+                            <span class="side front">View Project</span>
+                            <span class="side top"><a href="https://github.com/ANUBHAV-03042004/mitram">Check It On Github</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project2_container">
+                <div class="project2">
+                    <img class="pr_img2" src="/project_img2.png" alt="esrgan_img">
+                    <h5>CHOR POLICE USING FLASK, TENSORFLOW, PYTORCH</h5>
+                </div>
+                <div class="box2_button">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <img src="/project2_logo.png" alt="icon_image">
+                        </div>
+                        <div class="cube">
+                            <span class="side front">View Project</span>
+                            <span class="side top"><a href="https://github.com/ANUBHAV-03042004/Chor_Police-Enhanced-Super-Resolution-Generative-Adversarial-Network">Check It On Github</a></span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <!-- Second Row: img_container -->
+        <div class="projects-row-2">
+            <div class="img_container">
+                <img class="project_img" src="/projects.png" alt="project_img">
+                <h1>PROJECTS</h1>
+            </div>
         </div>
 
-        <div class="img_container">
-            <img class="project_img" src="/projects.png" alt="project_img">
-            <h1>PROJECTS</h1>
-        </div>
-        <div class="project2_container">
-        <div class="project2">
-            <img class="pr_img2" src="/project_img2.png" alt="esrgan_img">
-            <h5>CHOR POLICE USING FLASK , TENSORFOW , PYTORCH </h5>
-        </div>
-        <br>
-        <div class="box2_button"> 
-            <div class="button-icon">
-              <div class="icon">
-               <img src="/project2_logo.png" alt="icon_image">
-              </div>
-              <div class="cube">
-                <span class="side front">View Project</span>
-                <span class="side top"><a href="https://github.com/ANUBHAV-03042004/Chor_Police-Enhanced-Super-Resolution-Generative-Adversarial-Network">Check It On Github</a></span>
-              </div>
+        <!-- Third Row: project3 and project4 -->
+        <div class="projects-row-3">
+            <div class="project3_container">
+                <div class="project3">
+                    <img class="pr_img3" src="/project_img3.png" alt="project3_img">
+                    <h5>LSG FAN PAGE - USING BOOTSTRAP, EJS, NODE.JS, EXPRESS.JS, MONGODB</h5>
+                </div>
+                <div class="box2_button">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <img src="/project3_logo.png" alt="icon_image">
+                        </div>
+                        <div class="cube">
+                            <span class="side front">View Project</span>  
+                           <span class="side top"><a href="https://shadowfox-ipl-lsg-team-production.up.railway.app/" target="_blank">Check It On Railway</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project4_container">
+                <div class="project4">
+                    <img class="pr_img4" src="/project_img4.png" alt="project4_img">
+                    <h5>AKS PORTFOLIO - USING EJS, NODE.JS, EXPRESS.JS, HTML, CSS</h5>
+                </div>
+                <div class="box2_button">
+                    <div class="button-icon">
+                        <div class="icon">
+                            <img src="/favicon.png" alt="icon_image">
+                        </div>
+                        <div class="cube">
+                            <span class="side front">View Project</span>
+                            <span class="side top"><a href="https://shadowfoxaksportfolio-production.up.railway.app/" target="_blank">Check It On Railway</a></span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
-</div>
+
+    <%- include('partials/hide-show') %>
 </body>
 </html>

@@ -1,41 +1,169 @@
-.skills
-{
-    height:95vh;
-    width:100vw;
+/* skill.css */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.skills {
+    height: 95vh;
+    width: 100vw;
     display: flex;
     align-items: center;
 }
-.skill_img{
+
+.skill_img {
     display: block;
-    width:30vw;
-    margin-left:0.5vw;
+    width: 30vw;
+    margin-left: 0.5vw;
 }
-.skills h1{
-    color:black;
+
+.skills h1 {
+    color: black;
     background-color: red;
-    width:25vw;
-    text-align:center;
+    width: 25vw;
+    text-align: center;
 }
-.skill_img img{width:75%; margin-left:5vh;}
-.skill_img h1{ margin-left:1.5vw;}
+
+.skill_img img {
+    width: 75%;
+    margin-left: 5vh;
+}
+
+.skill_img h1 {
+    margin-left: 1.5vw;
+}
 
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    grid-template-rows: repeat(2, auto); 
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
     gap: 10px;
-   width:65vw;
+    width: 65vw;
     margin: auto;
-    margin-top:15vh;
+    margin-top: 15vh;
 }
 
 .image-grid img {
-    width: 50%; 
+    width: 50%;
     height: auto;
     border-radius: 5px;
 }
-.image-grid a{
+
+.image-grid a {
     text-decoration: none;
-    color:black;
-    text-align:center;
+    color: black;
+    text-align: center;
+}
+
+/* Hide-show styles (moved from inline styles) */
+.hide-show {
+    display: none;
+}
+@media (max-width: 100px) {
+    .skills{display: none;}
+    .hide-show {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        min-height: 100vh;
+        justify-content: center;
+    }
+    .hide-show img {
+        width: clamp(40px, 10vw, 50px);
+        height: auto;
+        max-width: 100%;
+    }
+    .hide-show h6 {
+        margin: 15px 0;
+        line-height: 1;
+        font-size: clamp(0.5rem, 2vw, 1rem);
+        color: #333;
+    }
+    .hide-show h5 {
+        display: none;
+    }
+    header {
+        display: none !important;
+    }
+    footer {
+        display: none !important;
+    }
+}
+@media (max-height: 100px) {
+    .skills {
+        display: none;
+    }
+    header {
+        display: none;
+    }
+    footer {
+        display: none !important;
+    }
+    .hide-show {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .hide-show img {
+        width: 50px;
+        height: auto;
+        max-width: 100%;
+    }
+    .hide-show h5 {
+        margin: 15px 0;
+        font-size: clamp(0.5rem, 2vw, 1rem);
+    }
+    .hide-show h6 {
+        display: none;
+    }
+}
+
+@media (min-width: 100px) and (max-width: 700px) {
+    .skills {
+        flex-direction: column; 
+        height: auto; 
+        min-height: 100vh; 
+        justify-content: center;
+        padding: 20px 0;
+        margin-bottom:10vh;
+    }
+
+    .skill_img {
+          margin-top:10vh;
+        width: 90vw; 
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .skills h1 {
+        width: clamp(50vw, 100vw, 120vw);
+        margin-left:-5vw !important;
+        font-size: clamp(1.2rem, 3vw, 1.8rem);
+    }
+
+    .skill_img img {
+        width: 50%; 
+        margin-left: 0;
+    }
+
+    .skill_img h1 {
+        margin-left: 0;
+    }
+
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        grid-template-rows: repeat(4, auto); /* 4 rows */
+        width: 90vw; /* Take up most of the viewport width */
+        margin-top: 5vh; /* Reduce top margin */
+        gap: 15px; /* Slightly larger gap for readability */
+    }
+
+    .image-grid img {
+        width: 60%; /* Slightly larger images */
+    }
+
+    .image-grid a {
+        font-size: clamp(0.7rem, 2vw, 0.9rem); /* Smaller text */
+    }
 }

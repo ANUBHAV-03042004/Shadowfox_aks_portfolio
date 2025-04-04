@@ -5,25 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="/favicon.png">
     <title>Page Not Found</title>
+    <link rel="stylesheet" href="/css/link.css">
+    <link rel="stylesheet" href="/css/page_not_found.css">
 </head>
 <body>
     <div class="page_not_found_container">
         <img class="page_not_found_img" src="/projects1.png" alt="page_not_found_img">
-        <h1>Error 404:Page Not Found</h1>
+        <h1>Error 404: Page Not Found</h1>
+        <div class="button-icon">
+            <div class="icon">
+                <img src="/favicon.png" alt="icon_image">
+            </div>
+            <div class="cube">
+                <span class="side front" style="text-align: center;">Entered Incorrect Route ?</span>
+                <span class="side top"><a href="/">Get Back To Home</a></span>
+            </div>
+        </div>
     </div>
+    <%- include('partials/hide-show') %>
 </body>
 </html>
-<style>
-    .page_not_found_container{
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .page_not_found_container h1{
-        color:black;
-  background-color: red;
-  width:25vw;
-  text-align:center;
-    }
-</style>

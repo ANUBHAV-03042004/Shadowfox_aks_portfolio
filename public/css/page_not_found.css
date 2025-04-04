@@ -1,0 +1,117 @@
+.hide-show {
+    display: none;
+}
+.page_not_found_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+    position: relative;
+}
+.page_not_found_container img.page_not_found_img {
+    width: 100%;
+    max-width: 500px; 
+    height: auto; 
+}
+.page_not_found_container h1 {
+    color: black;
+    background-color: red;
+    width: 25vw;
+    min-width: 200px;
+    text-align: center;
+    font-size: clamp(1.5rem, 5vw, 3rem); 
+    padding: 10px;
+    margin: 20px 0;
+    transform:translateY(-1vw);
+}
+
+
+
+@media (max-width: 100px) {
+    .page_not_found_container {
+        display: none;
+    }
+    .hide-show {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .hide-show img {
+        width: 50px;
+        height: auto;
+        max-width: 100%;
+    }
+    .hide-show h6 {
+        margin: 15px 0;
+        line-height: 1;
+        font-size: clamp(0.5rem, 2vw, 1rem);
+    }
+    .hide-show h5 {display: none;}
+}
+
+
+@media (min-width: 101px) and (max-width: 400px) {
+    .page_not_found_container img.page_not_found_img {
+        max-width: 250px; 
+        display: block; 
+        margin: 0 auto;
+    }
+    .page_not_found_container h1 {
+        width: 100%; 
+        min-width: 250px;
+    }
+}
+
+@media (min-width: 401px) {
+    .page_not_found_container img.page_not_found_img {
+        max-width: 350px;
+        display: block;
+        margin: 0 auto;
+    }
+    .page_not_found_container h1 {
+        width: 70%;
+        min-width: 200px;
+        text-align: center;
+    }
+}
+@media (min-width: 101px) and (max-width: 200px) {
+         .page_not_found_container h1 { transform:translateY(-10vw);}
+}
+@media (min-width: 201px) and (max-width: 250px) {
+         .page_not_found_container h1 { transform:translateY(-8vw);}
+}
+@media (min-width: 251px) and (max-width: 300px) {
+         .page_not_found_container h1 { transform:translateY(-6vw);}
+}
+@media (min-width: 301px) and (max-width: 400px) {
+         .page_not_found_container h1 { transform:translateY(-4.5vw);}
+}
+@media (min-width: 401px) and (max-width: 550px) {
+         .page_not_found_container h1 { transform:translateY(-3.5vw);}
+}
+@media (min-width: 551px) and (max-width: 750px) {
+         .page_not_found_container h1 { transform:translateY(-2.5vw);}
+}
+@media (min-width: 751px) and (max-width: 1050px) {
+         .page_not_found_container h1 { transform:translateY(-1.5vw);}
+}
+@media (max-height: 100px) {
+    .page_not_found_container{display:none;}
+    .hide-show {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .hide-show img {
+        width: 50px;
+        height: auto;
+        max-width: 100%;
+    }
+    .hide-show h5 {
+        margin: 15px 0;
+        font-size: clamp(0.5rem, 2vw, 1rem);
+    }
+    .hide-show h6 {display: none;}
+}

@@ -1,0 +1,133 @@
+#about_img {
+    margin-top: 20vh;
+    object-fit: contain;
+  }
+  .about h1 {
+    color: black;
+    background-color: red;
+    width: 25vw;
+    text-align: center;
+    margin-left: 8vw;
+    margin-bottom: 15vh;
+  }
+  .about-container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+    font-size: 1.2rem;
+  }
+  .comp {
+    display: flex;
+  }
+  
+        
+  @media (max-width: 100px) {
+    .comp {
+        display: none;
+    }
+  }
+  
+  @media (min-width: 100px) and (max-width: 400px) {
+    .comp {
+        display: block;
+    }
+    .about h1 {
+        width: clamp(100%, 180%, 250%);
+        margin-left: 0;
+        font-size: clamp(1rem, 3vw, 2rem);
+        margin-bottom: 0vh;
+    }
+    #about_img {
+        width: clamp(70%, 125%, 135%);
+        margin-top: 20vh;
+        margin-left: 25vw;
+        margin-right: auto;
+    }
+    .about-container {
+        width: 100%;
+        padding: 45px;
+        font-size: clamp(0.8rem, 2.5vw, 1rem);
+        margin-left: 25vw;
+    }
+    .about-container h1 {
+        font-size: clamp(0.9rem, 3vw, 1.8rem);
+    }
+    .icon img {
+  height: clamp(20px, 3.5vw, 80px);
+  width: clamp(20px, 3.5vw, 80px);
+  }
+  .side{
+  font-size: clamp(0.7em, 2.5vw, 1em);
+  }
+  }
+  @media (min-width: 400px) and (max-width: 800px) {
+    .comp {
+        display: block;
+    }
+    .about h1 {
+        width: clamp(100%, 125%, 150%);
+        margin-left: 0;
+        font-size: clamp(1rem, 3vw, 2rem);
+        margin-bottom: 0vh;
+    }
+    #about_img {
+        width: clamp(70%, 125%, 135%);
+        margin-top: 12vh;
+        margin-left: auto;
+        margin-right: auto;
+        height:50vh;
+    }
+    .about-container {
+        width: 100%;
+        margin-top:-6vh;
+        padding: 45px;
+        margin-left:7vw;
+        font-size: clamp(0.8rem, 2.5vw, 1rem);
+    }
+    .about-container h1 {
+        font-size: clamp(0.9rem, 3vw, 1.8rem);
+    }
+    .icon img {
+  height: clamp(20px, 3.5vw, 80px);
+  width: clamp(20px, 3.5vw, 80px);
+  }
+  .side{
+  font-size: clamp(0.7em, 2.5vw, 1em);
+  }
+  } 
+  @media (min-width: 800px) {
+    .about h1 {
+        width: clamp(100%, 125%, 150%);
+        margin-top:-5vh;
+        margin-left:2vh;
+        font-size: clamp(1rem, 3vw, 2rem);
+    }
+    #about_img {
+        width: clamp(70%, 130%, 135%);
+        margin-top: 18vh;
+        margin-left: auto;
+        margin-right: auto;
+        height:50vh;
+    }
+    .about-container {
+        width: 100%;
+        margin-top:20vh;
+        padding: 45px;
+        margin-left:7vw;
+        font-size: clamp(0.8rem, 2.5vw, 1rem);
+    }
+    .about-container h1 {
+        font-size: clamp(0.9rem, 3vw, 1.8rem);
+    }
+  
+  .side{
+  font-size: clamp(0.7em, 1.0vw, 1em);
+  }
+  }  
+
+
+  
+@media (max-height: 100px) {
+   .comp{display: none;}
+ }
