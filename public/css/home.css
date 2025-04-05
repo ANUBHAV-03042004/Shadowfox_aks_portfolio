@@ -86,7 +86,7 @@
 @media (min-width: 101px) and (max-width: 200px) {
     .home h1 {
             width: clamp(50%, 70%, 80%);
-            margin-top: -52vh;
+            margin-top: -63vh;
             font-size: clamp(1rem, 3vw, 2rem);
         }
         .home_img {
