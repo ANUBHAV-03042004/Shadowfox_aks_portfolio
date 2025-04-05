@@ -78,7 +78,9 @@ app.post('/send-message', async (req, res) => {
         res.status(500).json({ message: 'An error occurred while sending the message.' });
     }
 });
-
+app.get('/certification',(req,res)=>{
+    res.render('certification');
+})
 app.get('/*', (req, res) => {
     res.render('page_not_found');
 });
