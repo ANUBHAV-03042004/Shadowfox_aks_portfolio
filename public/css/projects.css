@@ -25,7 +25,8 @@ html, body {
     margin-bottom:10vh;
 }
 
-.project1_container, .project2_container, .project3_container, .project4_container, .img_container, .spacer {
+.project1_container, .project2_container, .project3_container,
+ .project4_container, .img_container, .spacer ,.project5_container,.project6_container,.project7_container{
     flex: 1 1 30%; /* Each item takes up roughly 30% of the width, adjustable */
     display: flex;
     flex-direction: column;
@@ -65,8 +66,8 @@ html, body {
     margin-top: 10px;
 }
 
-.project1, .project2, .project3, .project4 {
-    height: 34vh;
+.project1, .project2, .project3, .project4,.project5,.project6,.project7 {
+    height: 36vh;
     width: 100%;
     max-width: 28vw; /* Keep the max width for larger screens */
     color: white;
@@ -79,11 +80,17 @@ html, body {
     width:30vw;
     color:black;
 }
-.project1:hover, .project2:hover, .project3:hover, .project4:hover {
+.project1:hover, .project2:hover, .project3:hover, .project4:hover,.project5:hover,.project6:hover,.project7:hover {
     transform: scale(1.05);
 }
-
-.pr_img1, .pr_img2, .pr_img3, .pr_img4 {
+.project5{
+    border:2px solid black;
+    color:black;
+}
+.project6,.project7{
+    color:black;
+}
+.pr_img1, .pr_img2, .pr_img3, .pr_img4,.pr_img5,.pr_img6,.pr_img7 {
     width: 100%;
     height: 30vh;
     object-fit: cover;
@@ -209,7 +216,7 @@ color:black;
         display: none !important;
     }
 }
-@media (min-width: 101px) and (max-width: 700px) {
+@media (max-width: 700px) {
     .container_project {
         display: flex;
         flex-direction: column; /* Stack items vertically */
@@ -220,7 +227,8 @@ color:black;
         margin-bottom: 5vh;
     }
 
-    .project1_container, .project2_container, .project3_container, .project4_container, .img_container {
+    .project1_container, .project2_container, .project3_container, .project4_container,.project5_container,
+    .project6_container, .img_container ,.project7_container{
         width: 90vw; /* Take up most of the viewport width */
         max-width: none; /* Remove max-width constraint */
         margin: 10px 0;
@@ -241,16 +249,16 @@ color:black;
         font-size: clamp(1rem, 2.5vw, 1.5rem);
     }
 
-    .project1, .project2, .project3, .project4 {
+    .project1, .project2, .project3, .project4 ,.project5,.project6,.project7{
         max-width: 90vw; 
         padding: 8px;
     }
 
-    .pr_img1, .pr_img2, .pr_img3, .pr_img4 {
+    .pr_img1, .pr_img2, .pr_img3, .pr_img4,.pr_img5,.pr_img6,.pr_img7 {
         height: 20vh; 
     }
 
-    .project1 h5, .project2 h5, .project3 h5, .project4 h5 {
+    .project1 h5, .project2 h5, .project3 h5, .project4 h5,.project5 h5,.project6 h5 ,.project7 h5{
         font-size: clamp(0.7rem, 2vw, 0.9rem); /* Smaller font size */
         width:92vw; 
     }
@@ -276,9 +284,14 @@ color:black;
         margin: 15px 0; 
         margin-top:-10vh;
     }
-    .project1:hover, .project2:hover, .project3:hover, .project4:hover {
+    .project1:hover, .project2:hover, .project3:hover, .project4:hover,.project5:hover,.project6:hover,.project7:hover {
     transform: scale(1.05);
 }
+ .projects-row-4{
+    display: flex;
+    flex-direction: column;
+      gap:5vw !important;
+ }
 }
 
 
@@ -303,4 +316,8 @@ color:black;
          font-size: clamp(0.5rem, 2vw, 1rem);
      }
      .hide-show h6 {display: none;}
+ }
+ .projects-row-4{
+    display: flex;
+    gap:35vw;
  }
